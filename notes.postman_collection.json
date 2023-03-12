@@ -260,7 +260,7 @@
 			"response": []
 		},
 		{
-			"name": "/api/notes/?fromDate={{startOfToday}}&tillDate={{now}}",
+			"name": "/api/notes/?from_date={{startOfToday}}&till_date={{now}}",
 			"event": [
 				{
 					"listen": "prerequest",
@@ -408,14 +408,14 @@
 					}
 				],
 				"url": {
-					"raw": "{{baseUrl}}/api/notes/{{lastNoteId}}/",
+					"raw": "{{baseUrl}}/api/notes/stats/",
 					"host": [
 						"{{baseUrl}}"
 					],
 					"path": [
 						"api",
 						"notes",
-						"{{lastNoteId}}",
+						"stats",
 						""
 					]
 				}
